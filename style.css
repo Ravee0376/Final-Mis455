@@ -1,22 +1,145 @@
-*{
-
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-
-    
-
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* styles.css */
-
-
-
-
-input{
-
-    
-
+.site-header {
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
 
-  
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid white;
+}
+
+.navigation a:hover {
+    color: rgb(160, 15, 15);
+    font-size: 1.2em;
+}
+
+#site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.meal-not-found {
+    text-align: center;
+    font-size: 18px;
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.content-main {
+    padding: 20px;
+    flex: 1;
+}
+
+.meal-search-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+#mealSearchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#mealSearchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mealSearchButton:hover {
+    background-color: #000000;
+}
+
+.meal-results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.meal-item {
+    background-color: #858080;
+    border: 1px solid #6b96e6;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.meal-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.meal-item img:hover {
+    transform: scale(1.5);
+}
+
+.meal-item-info {
+    padding: 20px;
+}
+
+.meal-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.meal-show-all-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.meal-show-all-button:hover {
+    background-color: #000000;
+}
+
+/* Media queries and other styles remain unchanged */
+
+
+
+.content-main {
+    padding: 20px;
+    flex: 1;
+    background-color: #000000; /* Light grey background */
+}
